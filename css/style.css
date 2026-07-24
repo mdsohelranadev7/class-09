@@ -79,6 +79,13 @@
         column-gap: 30px;
     }
 
+    .icons>i:first-child {
+        animation-name: rotated;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
     .exit {
         display: flex;
         column-gap: 5px;
@@ -182,6 +189,12 @@
         align-items: center;
         column-gap: 20px;
         font-size: 36px;
+    }
+    .bannerIcons i{
+        animation-name: scales;
+        animation-timing-function: ease-in-out;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
     }
 
     .facebook {
@@ -492,6 +505,13 @@
         font-size: 27px;
         letter-spacing: 7%;
         font-family: "Barlow Condensed", sans-serif;
+
+        animation-name: leftslider;
+        animation-duration: 0.5s;
+        animation-timing-function:ease-in ;
+        /* animation-iteration-count:infinite; */
+        animation-fill-mode: forwards;
+        
     }
 
     /* games section end */
@@ -872,9 +892,10 @@
 
     }
 
-    .controller:hover{
+    .controller:hover {
         transform: scale(1.1);
     }
+
     .controller span {
         padding-top: 30px;
         font-size: 40px;
@@ -961,9 +982,10 @@
         transition: 0.4s;
     }
 
-.professetionalTeamname1 .fristSqude:hover{
-    transform: scale(1.1);
-}
+    .professetionalTeamname1 .fristSqude:hover {
+        transform: scale(1.1);
+    }
+
     .fristSqude {
         position: relative;
         color: #fff;
@@ -1410,3 +1432,42 @@
         padding: 20px;
 
     }
+
+
+
+    @keyframes rotated{
+        0% {
+            transform: rotate(0deg);
+
+        }
+
+        100% {
+            transform: rotate(360deg) scale(1);
+        }
+    }
+
+    @keyframes scales{
+        0%{
+            transform: scale(1);
+        }
+        50%{
+            transform: scale(1.5);
+        }
+
+
+        100%{
+            transform: scale(1);
+        }
+    }
+
+    @keyframes leftslider{
+        0%{
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        100%{
+            transform: translateX(0%);
+            opacity: 1;
+        }
+    }
+  
