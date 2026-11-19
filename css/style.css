@@ -190,7 +190,8 @@
         column-gap: 20px;
         font-size: 36px;
     }
-    .bannerIcons i{
+
+    .bannerIcons i {
         animation-name: scales;
         animation-timing-function: ease-in-out;
         animation-duration: 2s;
@@ -508,10 +509,10 @@
 
         animation-name: leftslider;
         animation-duration: 0.5s;
-        animation-timing-function:ease-in ;
+        animation-timing-function: ease-in;
         /* animation-iteration-count:infinite; */
         animation-fill-mode: forwards;
-        
+
     }
 
     /* games section end */
@@ -1435,7 +1436,7 @@
 
 
 
-    @keyframes rotated{
+    @keyframes rotated {
         0% {
             transform: rotate(0deg);
 
@@ -1446,28 +1447,44 @@
         }
     }
 
-    @keyframes scales{
-        0%{
+    @keyframes scales {
+        0% {
             transform: scale(1);
         }
-        50%{
+
+        50% {
             transform: scale(1.5);
         }
 
 
-        100%{
+        100% {
             transform: scale(1);
         }
     }
 
-    @keyframes leftslider{
-        0%{
+    @keyframes leftslider {
+        0% {
             transform: translateX(100%);
             opacity: 0;
         }
-        100%{
+
+        100% {
             transform: translateX(0%);
             opacity: 1;
         }
     }
-  
+
+
+    @media (max-widht: 780px) {
+        .container {
+            width: 100%;
+            padding: 15px;
+
+
+        }
+
+        .maunber li {
+            display: flex;
+            flex-direction: column;
+        }
+    }
