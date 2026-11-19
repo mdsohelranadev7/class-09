@@ -1475,16 +1475,18 @@
     }
 
 
-    @media (max-widht: 780px) {
+    @media (max-width: 780px) {
         .container {
             width: 100%;
             padding: 15px;
-
-
         }
 
-        .maunber li {
+        .maunber {
             display: flex;
             flex-direction: column;
         }
+
+
     }
+
+  
